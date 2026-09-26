@@ -1,0 +1,12 @@
+# 문제 02. 배열 제어하기
+# 260926 14:59~15:01
+
+def solution(arr):
+    arr = set(arr)
+    arr = list(arr)
+    arr.sort(reverse=True)
+    return arr
+
+# TEST 코드 입니다. 주석을 풀고 실행시켜보세요
+# print(solution([4, 2, 2, 1, 3, 4])) # 반환값 : [4, 3, 2, 1]
+# print(solution([2, 1, 1, 3, 2, 5, 4])) # 반환값 : [5, 4, 3, 2, 1]
