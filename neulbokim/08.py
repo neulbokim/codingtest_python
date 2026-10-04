@@ -7,18 +7,23 @@ def solution(s):
     for i in range(len(s)):
         if s[i] == "(":
             stack.append(s[i])
+            
         elif s[i] == ")":
             if len(stack) == 0:
                 result = False
+                return result
             else:
                 stack.pop()
+                
     if len(stack)==0:
+        
         result = True
     else:
         result = False
     return result
 
-s = "(())()"
+# s = "(())()"
 # s = "((())()"
+s = "("
 
 print(solution(s))
